@@ -28,7 +28,8 @@ public class GameView extends JPanel {
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
 		setBackground(MIDNIGHT_BLUE);
 		
-		this.timer = new Timer(1000 / 30, new ActionListener() {
+		// djh2: changed from 30 to 90 fps
+		this.timer = new Timer(1000 / 90, new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				handleTimerTick();
