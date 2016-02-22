@@ -27,9 +27,10 @@ public class GameView extends JPanel {
 		this.model = model;
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
 		setBackground(MIDNIGHT_BLUE);
-		
-		// djh2: changed from 30 to 90 fps
-		this.timer = new Timer(1000 / 90, new ActionListener() {
+
+		//jb17 supah fassttt...like blazin fasssst
+		this.timer = new Timer(1000 / 300, new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				handleTimerTick();
