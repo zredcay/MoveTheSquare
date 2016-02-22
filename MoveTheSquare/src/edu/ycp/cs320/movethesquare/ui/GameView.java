@@ -28,8 +28,7 @@ public class GameView extends JPanel {
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
 		setBackground(MIDNIGHT_BLUE);
 
-		//jb17 supah fassttt...like blazin fasssst
-		this.timer = new Timer(1000 / 300, new ActionListener() {
+		this.timer = new Timer(1000 / 30, new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
